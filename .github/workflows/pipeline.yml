@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  simple_deployement_pipline:
+  simple_deployment_pipeline:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
@@ -15,5 +15,6 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: npm install
+
       - name: Check style
         run: npm run eslint
